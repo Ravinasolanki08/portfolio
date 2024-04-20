@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Caveat:wght@400..700&family=Dancing+Script&family=Lemon&family=Outfit:wght@200;400;500;600;700;800&family=Playfair+Display&family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.navbar {
+    font-size: 28px;
+}
+.navbar-brand{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    margin-left: 30px;
+    opacity: 0;
+    animation:logoSlide 1s ease forwards;
+}
+.navbar-nav {  
+    text-align: center;
+}
+.nav-link{
+    font-size: 25px;
+    margin-right: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #000;
+}
+.navbar-toggler{
+    border: none;
+}
+.home{
+    padding: 50px;
+    margin:10% 5%;
+}
+
+.home-content{
+    margin: 0 100px 0 50px;
+    padding: 10px;
+}
+.home-content h3{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size:32px;
+    opacity: 0;
+    animation:txtSlide 1s ease forwards;
+    animation-delay: .5s;
+}
+.home-content h1{
+    font-weight: 700;
+    margin:10px 16px;
+    opacity: 0;
+    animation:txtSlide1 1s ease-in forwards;
+    animation-delay: .7s;
+}
+.home-content h3{
+    margin:0 12px;
+    font-weight: 500;
+}
+.text{
+    font-weight: 800;
+}
+.home-content p{
+  margin-left: 12px;
+    font-size: 18px;
+    opacity: 0;
+    animation:txtSlide2 1s ease-in forwards;
+    animation-delay: .5s;
+}
+.home-social{
+    line-height: 3;
+    margin-left: 50px;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+}
+.home-social a{
+    color: inherit;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.btn-box {
+    font-size: 15px;
+    text-decoration:none;
+    border: 1px black solid;
+    margin:60px;
+    padding:5px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.about{
+    margin:31% 0 12% 0;
+}
+.about-text{
+    max-width: 579px;
+    opacity: 0;
+    animation:aboutanimation .5s forwards ease-in;
+    animation-delay: .5s;
+    margin-top:10%;
+}
+.about-text h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 29px;
+}
+.about-text h4{
+    text-align: center;
+   margin-top: 20px;
+}
+.about-text p{
+  word-spacing: 5px;
+  padding-top: 10px;
+    font-size: 19px;
+    margin-left: 50px;
+}
+.about-img{
+    opacity: 0;
+    animation:aboutanimation1 .5s forwards ease-in;
+    animation-delay: .5s;
+    margin-left: 50px;
+}
+.details-list{
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+}
+.details-list i{
+    margin-right: 10px;
+}
+.skill{
+    margin:23% 12%;
+    padding-left: 50px;
+}
+.skill .card{
+    margin: 50px 10px;
+}
+.skill .card img{
+    aspect-ratio:1/1;
+}
+
+.skill-title{  
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.tool-title{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.progress{
+    margin-bottom: 40px;
+    background: white;  
+    border: 1px black solid;
+}
+.progress-bar{
+  background: #000;
+}
+.tool-list{
+    font-size: 20px;
+    padding-bottom: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+.projects{
+    margin-bottom: 15%;
+}
+.proj-title,.cont-title{
+    line-height: 1;
+    padding-top: 20px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:500;
+    font-style: normal;
+    padding-bottom: 20px;
+    font-size: 29px;
+    margin: 50px;
+    text-align: center;
+}
+.card-body a{
+ color: black;
+}
+.contact{
+    margin-top: 10%;
+}
+.contact-form{
+    margin: 0 28%;
+}
+.contact-form a{
+    color: #000;
+    text-decoration: none;
+}
+.send{
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    width: 40%;
+    padding: 10px;
+    color: #fff;
+   background-color: #000;
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+    margin-top: 5%;
+}
+.last-text p{
+    font-size: 21px;
+    font-weight: bold;
+    margin:10px;
+    padding: 10px;
+    text-align: center;
+}
+.card-img-top{
+    padding: 10px;
+}
+.scroll{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    font-size: 29px;
+    color: gray;
+}
+/* keyframes animation */
+@keyframes logoSlide{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes txtSlide{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+@keyframes txtSlide1{
+    0%{
+        /* transform: translateY(-100px); */
+        opacity: 0;
+    }
+    100%{
+        /* transform: translateY(0); */
+        opacity:1;
+    }
+}
+@keyframes txtSlide2{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes  aboutanimation{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+@keyframes  aboutanimation1{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
